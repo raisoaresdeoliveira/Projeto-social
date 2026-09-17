@@ -1,4 +1,4 @@
-@charset "UTF-8";
+charset "UTF-8";
 
 *{
     margin: 0;
@@ -35,14 +35,18 @@ section#cell{
 }
 
 iframe#tela{
-    position: relative;
+    position: absolute;
     top: 80px;
     left: 22px;
     width: 267px;
     height: 472px;
+    border: none;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 section#redes{
+    padding: 20px;
     position: relative;
     top: 50%;
     transform: translate(0%, -50%);
@@ -73,4 +77,4 @@ section#redes>a>img:hover{
 
     transition: transform 0.2s, box-shadow 0.2s ;
     
-}
+}@
